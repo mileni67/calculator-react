@@ -1,7 +1,7 @@
 #Calculator-React
 ![calculator](https://user-images.githubusercontent.com/25402008/215073123-34f9ea4b-7726-46df-b09a-b1d44e4f9b42.gif)
 
-##Demo
+## Demo
 https://mileni67.github.io/calculator-react/
 
 ## Description
