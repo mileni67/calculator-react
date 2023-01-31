@@ -2,6 +2,7 @@ import { useState } from 'react';
 import './App.css';
 import { Form } from './Form';
 import { currencies } from './currencies';
+import Header from "./Header"; 
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
 
     return (
         <div className="app">
+            <Header title = "Przelicznik walut"/>
             <Form
               result={result}
               calculateResult={calculateResult}

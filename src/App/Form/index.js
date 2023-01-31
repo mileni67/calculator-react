@@ -14,9 +14,6 @@ export const Form = ({ calculateResult, result }) => {
 
     return (
         <form className="form" onSubmit={onSubmit}>
-            <h1 className="form__header">
-                Przelicznik walut
-            </h1>
             <p>
                 <label>
                     <span className="form__labelText">
@@ -27,9 +24,10 @@ export const Form = ({ calculateResult, result }) => {
                         onChange={({ target }) => setAmount(target.value)}
                         className="form__field"
                         type="number"
-                        required
                         step="0.01"
                         placeholder="Wpisz kwotę w zł"
+                        required 
+                        min="0.1"
                     />
                 </label>
             </p>
