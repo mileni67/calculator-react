@@ -3,12 +3,6 @@
     margin-top: 0em;
 }
 
-.form__header {
-    color: #300d06;
-    text-align: center;
-    font-size: 40px ;
-}
-
 .form__labelText {
     max-width: 100px;
     width: 100%;
