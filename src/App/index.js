@@ -2,7 +2,8 @@ import { useState } from 'react';
 import './App.css';
 import { Form } from './Form';
 import { currencies } from './currencies';
-import Header from "./Header"; 
+import Header from "./Header";
+import { Clock } from "./Clock";
 
 function App() {
 
@@ -10,8 +11,8 @@ function App() {
 
     const calculateResult = (currency, amount) => {
         const rate = currencies
-          .find(({ short }) => short === currency)
-          .rate;
+            .find(({ short }) => short === currency)
+            .rate;
 
         setResult({
             sourceAmount: +amount,
@@ -22,10 +23,11 @@ function App() {
 
     return (
         <div className="app">
-            <Header title = "Przelicznik walut"/>
+            <Clock />
+            <Header title="Przelicznik walut" />
             <Form
-              result={result}
-              calculateResult={calculateResult}
+                result={result}
+                calculateResult={calculateResult}
             />
         </div>
     );
