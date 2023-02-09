@@ -19,7 +19,7 @@ export const Clock = () => {
         {date.toLocalString(undefined, {
             weekday: "long",
             day: "numeric",
-            month: "logn"
+            month: "long"
         })}
     </p>
 
