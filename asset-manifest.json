@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/calculator-react/static/css/main.12345e83.css",
-    "main.js": "/calculator-react/static/js/main.a711bb6a.js",
+    "main.js": "/calculator-react/static/js/main.1a5303c6.js",
     "static/js/787.899e6edf.chunk.js": "/calculator-react/static/js/787.899e6edf.chunk.js",
     "static/media/walutabackground.jpg": "/calculator-react/static/media/walutabackground.2513c57756d87e6bd702.jpg",
     "index.html": "/calculator-react/index.html",
     "main.12345e83.css.map": "/calculator-react/static/css/main.12345e83.css.map",
-    "main.a711bb6a.js.map": "/calculator-react/static/js/main.a711bb6a.js.map",
+    "main.1a5303c6.js.map": "/calculator-react/static/js/main.1a5303c6.js.map",
     "787.899e6edf.chunk.js.map": "/calculator-react/static/js/787.899e6edf.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.12345e83.css",
-    "static/js/main.a711bb6a.js"
+    "static/js/main.1a5303c6.js"
   ]
 }
