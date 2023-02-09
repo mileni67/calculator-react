@@ -7,6 +7,9 @@ https://mileni67.github.io/calculator-react/
 ## Description
 This app will help you calculate currency
 
+## Updates
+- Time and date online
+
 ## Used Technologies
 - HTML
 - CSS
