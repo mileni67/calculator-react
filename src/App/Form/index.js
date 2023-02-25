@@ -1,7 +1,7 @@
-import "./style.css";
 import { currencies } from "../currencies";
 import { useState } from "react";
 import { Result } from "./Result";
+import { StyledForm, LabelText, Field, StyledButton, } from "./styled";
 
 export const Form = ({ calculateResult, result }) => {
     const [currency, setCurrency] = useState(currencies[0].short);
@@ -13,31 +13,31 @@ export const Form = ({ calculateResult, result }) => {
     }
 
     return (
-        <form className="form" onSubmit={onSubmit}>
+        <StyledForm onSubmit={onSubmit}>
             <p>
                 <label>
-                    <span className="form__labelText">
+                    <LabelText>
                         Kwota w zł*:
-                    </span>
-                    <input
+                    </LabelText>
+                    <Field
+                        as="input"
                         value={amount}
                         onChange={({ target }) => setAmount(target.value)}
-                        className="form__field"
                         type="number"
                         step="0.01"
                         placeholder="Wpisz kwotę w zł"
-                        required 
+                        required
                         min="0.1"
                     />
                 </label>
             </p>
             <p>
                 <label>
-                    <span className="form__labelText">
+                    <LabelText>
                         Waluta:
-                    </span>
-                    <select
-                        className="form__field"
+                    </LabelText>
+                    <Field
+                        as="select"
                         value={currency}
                         onChange={({ target }) => setCurrency(target.value)}
                     >
@@ -49,18 +49,20 @@ export const Form = ({ calculateResult, result }) => {
                                 {currency.name}
                             </option>
                         )))}
-                    </select>
+                    </Field>
                 </label>
             </p>
             <p>
-                <button className="form__button">Przelicz!</button>
+                <StyledButton
+                    as="button">Przelicz!
+                </StyledButton>
             </p>
 
             <p className="form__info">
                 Kursy pochodzą  ze strony nbp.pl z dnia 2022-02-15
             </p>
             <Result result={result} />
-        </form>
+        </StyledForm>
     );
 
 };
